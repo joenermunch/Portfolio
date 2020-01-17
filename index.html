@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <script src="./script.js" defer></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap"
@@ -26,8 +26,8 @@
 
         <nav>
           <ul>
-            <li><button>Projetos</button></li>
-            <li><button>Contato</button></li>
+            <li><button class="projects-button">Projetos</button></li>
+            <li><button class="contact-button">Contato</button></li>
           </ul>
         </nav>
       </header>
@@ -53,6 +53,8 @@
       </div>
 
       <div class="icon-container">
+        <img src="assets/html.png" alt="Html logo" class="html-logo logo" />
+        <img src="assets/css.png" alt="Css logo" class="css-logo logo" />
         <img src="assets/sass.png" alt="Sass logo" class="sass-logo logo" />
         <img src="assets/js.png" alt="Javascript logo" class="js-logo logo" />
         <img src="assets/react.png" alt="React logo" class="react-logo logo" />
@@ -60,15 +62,71 @@
       </div>
 
       <div class="arrow-container">
-        <i class="fas fa-sort-down"></i>
+        <div class="arrow">
+          <i class="fas fa-sort-down"></i>
+        </div>
       </div>
     </main>
 
     <section class="work">
-      <h3>Projetos</h3>
+      <h1>Projetos</h1>
 
       <div class="project-container">
-        <h5>Lorem, ipsum dolor.</h5>
+        <img
+          class="project-image"
+          src="https://source.unsplash.com/random/250x100"
+        />
+        <h2 class="project-title">Titulo do projeto.</h2>
+        <p class="project-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni,
+          reprehenderit.
+          <br />
+          <a class="code-text" href="">source code</a>
+        </p>
+
+        <div class="tags-container">
+          <div class="tag"><span>React</span></div>
+          <div class="tag"><span>ReactNative</span></div>
+          <div class="tag"><span>Node.js</span></div>
+        </div>
+      </div>
+      <div class="project-container">
+        <img
+          class="project-image"
+          src="https://source.unsplash.com/random/250x100"
+        />
+        <h2 class="project-title">Titulo do projeto.</h2>
+        <p class="project-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni,
+          reprehenderit.
+          <br />
+          <a class="code-text" href="">source code</a>
+        </p>
+
+        <div class="tags-container">
+          <div class="tag"><span>React</span></div>
+          <div class="tag"><span>ReactNative</span></div>
+          <div class="tag"><span>Node.js</span></div>
+        </div>
+      </div>
+      <div class="project-container">
+        <img
+          class="project-image"
+          src="https://source.unsplash.com/random/250x100"
+        />
+        <h2 class="project-title">Titulo do projeto.</h2>
+        <p class="project-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni,
+          reprehenderit.
+          <br />
+          <a class="code-text" href="">source code</a>
+        </p>
+
+        <div class="tags-container">
+          <div class="tag"><span>React</span></div>
+
+          <div class="tag"><span>Node.js</span></div>
+        </div>
       </div>
     </section>
 
@@ -83,7 +141,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer class="contact footer">
       <h3>Procurando um desenvolvedor? <span>Vamos conversar.</span></h3>
       <nav>
         <ul>
