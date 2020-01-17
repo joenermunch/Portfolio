@@ -1,0 +1,152 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body,
+ul,
+button {
+  padding: 0;
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+main {
+  padding: 2.5em;
+  height: 100vh;
+}
+
+main header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  text-align: right;
+}
+
+main header nav ul {
+  list-style: none;
+}
+
+main header nav ul button {
+  background: none;
+  outline: none;
+  border: none;
+  margin: 5px 15px;
+  font-size: 16px;
+}
+
+main header nav ul button:hover {
+  cursor: pointer;
+}
+
+main header .logo-box img {
+  width: 50px;
+}
+
+.text-container {
+  margin-top: 3em;
+  font-size: 30px;
+  color: #696969;
+}
+
+.text-container .stack {
+  color: #3a21e3;
+}
+
+.icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5em;
+}
+
+.icon-container img {
+  width: 50px;
+  margin-right: 15px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.icon-container img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.button-container button {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #696969;
+}
+
+.button-container button:hover {
+  color: #3a21e3;
+}
+
+.arrow-container {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.arrow-container .fas {
+  cursor: pointer;
+}
+
+@-webkit-keyframes example {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+}
+
+@keyframes example {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
