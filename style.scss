@@ -12,6 +12,12 @@ $logoblue: #3a21e3;
   box-sizing: border-box;
 }
 
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -60,12 +66,21 @@ main {
 
 .text-container {
   margin-top: 3em;
-  font-size: 30px;
+
+  font-size: 10vw;
   color: #696969;
+
+  h2 {
+    font-size: 20vw;
+  }
 
   .stack {
     color: $logoblue;
   }
+}
+
+.title-container {
+  height: 20vh;
 }
 
 .icon-container {
@@ -153,7 +168,7 @@ main {
   .tags-container {
     display: flex;
     justify-content: flex-start;
-    padding: 0 25px 20px 25px;
+    padding: 0 25px 20px 20px;
     .tag {
       font-size: 11px;
       padding: 5px;
@@ -170,6 +185,42 @@ main {
   margin-top: 20px;
   font-size: 12px;
   color: $logoblue;
+}
+
+footer {
+  background: $bright;
+  padding: 2.5em;
+
+  button {
+    background: none;
+    outline: none;
+    border: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .footer-span {
+    color: $logoblue;
+  }
+}
+
+.email {
+  transition: 1s;
+}
+
+.reverse {
+  transform: rotate(-90deg);
+}
+
+.email-span {
+  display: none;
+  color: $logoblue;
+
+  cursor: text;
+
+  margin-left: 10px;
 }
 
 @keyframes example {

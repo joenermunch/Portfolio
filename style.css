@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -59,12 +63,20 @@ main header .logo-box img {
 
 .text-container {
   margin-top: 3em;
-  font-size: 30px;
+  font-size: 10vw;
   color: #696969;
+}
+
+.text-container h2 {
+  font-size: 20vw;
 }
 
 .text-container .stack {
   color: #3a21e3;
+}
+
+.title-container {
+  height: 20vh;
 }
 
 .icon-container {
@@ -175,7 +187,7 @@ main header .logo-box img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 0 25px 20px 25px;
+  padding: 0 25px 20px 20px;
 }
 
 .project-container .tags-container .tag {
@@ -193,6 +205,42 @@ main header .logo-box img {
   margin-top: 20px;
   font-size: 12px;
   color: #3a21e3;
+}
+
+footer {
+  background: #f1f1f6;
+  padding: 2.5em;
+}
+
+footer button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer .footer-span {
+  color: #3a21e3;
+}
+
+.email {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.reverse {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.email-span {
+  display: none;
+  color: #3a21e3;
+  cursor: text;
+  margin-left: 10px;
 }
 
 @-webkit-keyframes example {
