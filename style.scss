@@ -33,14 +33,24 @@ button {
 
 main {
   padding: 2.5em;
+  padding-top: 0;
   height: 100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   header {
+    top: 30px;
+
+
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5vh;
+
+
+
     text-align: right;
 
     nav ul {
@@ -66,26 +76,8 @@ main {
   }
 }
 
-@media only screen and (min-width: 768px) {
+.button-nav {}
 
-  .logo-main {
-    transform: scale(1.2);
-  }
-
-  header {
-    height: 20vh;
-
-
-
-    nav ul li button {
-      font-size: 25px;
-
-
-    }
-  }
-
-
-}
 
 
 .text-container {
@@ -146,6 +138,12 @@ main {
   }
 }
 
+.image-box {
+  width: 100%;
+  height: 150px;
+  background-color: #ccc;
+}
+
 .arrow-container {
   position: absolute;
   bottom: 5%;
@@ -164,9 +162,33 @@ main {
 
 @media only screen and (min-width: 768px) {
 
+
+
+  .logo-main {
+    transform: scale(1.2);
+  }
+
+  .image-box {
+    height: 300px;
+  }
+
+  header {
+
+
+
+    nav ul li button {
+      font-size: 25px;
+
+
+    }
+  }
+
+
   main {
 
     padding: 100px;
+    padding-top: 0;
+
 
   }
 
@@ -177,6 +199,7 @@ main {
     margin-top: 25px;
     transition: 0.2s;
   }
+
 
   .text-container {
 
@@ -213,13 +236,16 @@ main {
   background-color: $bright;
 
   h1 {
-    font-size: 30px;
+
     color: #696969;
+    font-weight: 700;
   }
 
   .projects-title {
     font-size: 50px;
   }
+
+
 }
 
 .project-container {
@@ -227,6 +253,8 @@ main {
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
+
+  box-shadow: 2px 2px 4px rgba(105, 105, 105, 0.2);
 
   .project-image {
     width: 100%;
@@ -244,6 +272,7 @@ main {
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
+
     border-bottom: 1px solid $logoblue;
   }
 
@@ -291,6 +320,10 @@ main {
 footer {
   background: $bright;
   padding: 2.5em;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   nav ul {
     display: flex;
