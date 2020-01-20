@@ -105,6 +105,12 @@ main header .logo-box img {
   background-size: cover;
 }
 
+.medication {
+  background-image: url("./assets/medicationmockup.png");
+  background-position: center;
+  background-size: cover;
+}
+
 .button-nav {
   position: absolute;
   top: 30px;
@@ -264,6 +270,8 @@ main header .logo-box img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  padding-bottom: 40px;
   -webkit-box-shadow: 2px 2px 4px rgba(105, 105, 105, 0.2);
           box-shadow: 2px 2px 4px rgba(105, 105, 105, 0.2);
 }
@@ -276,7 +284,7 @@ main header .logo-box img {
   color: #3a21e3;
   font-weight: 700;
   margin-left: 20px;
-  margin: 10px 20px;
+  margin: 15px 20px;
 }
 
 .project-container .project-text {
@@ -290,6 +298,8 @@ main header .logo-box img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  bottom: 0;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;

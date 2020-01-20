@@ -111,6 +111,13 @@ main {
 
 }
 
+.medication {
+  background-image: url('./assets/medicationmockup.png');
+  background-position: center;
+  background-size: cover;
+
+}
+
 
 
 
@@ -306,6 +313,8 @@ main {
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  padding-bottom: 40px;
 
   box-shadow: 2px 2px 4px rgba(105, 105, 105, 0.2);
 
@@ -317,7 +326,7 @@ main {
     color: $logoblue;
     font-weight: 700;
     margin-left: 20px;
-    margin: 10px 20px
+    margin: 15px 20px
   }
 
   .project-text {
@@ -331,6 +340,8 @@ main {
 
   .tags-container {
     display: flex;
+    position: absolute;
+    bottom: 0;
     justify-content: flex-start;
     padding: 0 25px 20px 20px;
 
