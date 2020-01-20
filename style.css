@@ -22,6 +22,29 @@ button {
   font-family: "Work Sans", sans-serif;
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50vh;
+  padding: 2em;
+}
+
+.about h2 {
+  color: #696969;
+}
+
+.about a {
+  color: #3a21e3;
+}
+
 main {
   padding: 2em;
   padding-top: 0;
@@ -105,8 +128,26 @@ main header .logo-box img {
   background-size: cover;
 }
 
+.portfolio {
+  background-image: url("./assets/portfoliomockup.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.procuradev {
+  background-image: url("./assets/procuradevmockup.png");
+  background-position: center;
+  background-size: cover;
+}
+
 .medication {
   background-image: url("./assets/medicationmockup.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.calc {
+  background-image: url("./assets/calcmockup.png");
   background-position: center;
   background-size: cover;
 }
@@ -184,7 +225,7 @@ main header .logo-box img {
 
 .image-box {
   width: 100%;
-  height: 150px;
+  height: 300px;
 }
 
 .arrow-container {
@@ -213,7 +254,7 @@ main header .logo-box img {
             transform: scale(1.2);
   }
   .image-box {
-    height: 300px;
+    height: 500px;
   }
   .button-nav ul li button {
     font-size: 25px;
@@ -245,6 +286,10 @@ main header .logo-box img {
 }
 
 .work {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   padding: 2em;
   padding-top: 15px;
   padding-bottom: 1em;
@@ -292,6 +337,7 @@ main header .logo-box img {
   padding-top: 0;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 3em;
 }
 
 .project-container .tags-container {
@@ -318,20 +364,34 @@ main header .logo-box img {
 }
 
 .code-text {
-  margin-top: 20px;
+  position: absolute;
+  bottom: 60px;
   font-size: 12px;
   color: #3a21e3;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
   .work {
     padding: 0 100px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     padding-bottom: 50px;
+  }
+  .image-box {
+    height: 500px;
+  }
+  .projects-title {
+    grid-column: 1/-1;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .work {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
   .projects-title {
     grid-column: 1/-1;
@@ -405,7 +465,7 @@ footer .footer-span:hover {
 .email-span {
   display: none;
   color: #3a21e3;
-  cursor: text;
+  cursor: pointer;
   margin-left: 10px;
 }
 
