@@ -32,7 +32,7 @@ button {
 }
 
 main {
-  padding: 2.5em;
+  padding: 2em;
   padding-top: 0;
   height: 100vh;
   position: relative;
@@ -41,8 +41,25 @@ main {
   justify-content: center;
 
   header {
-    top: 30px;
 
+    position: absolute;
+    top: 30px;
+    display: flex;
+
+    justify-content: space-around;
+
+
+
+    .logo-main {
+      transition: 0.2s;
+
+      transform: rotate(10deg);
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.5) rotate(20deg);
+      }
+    }
 
 
     display: flex;
@@ -53,22 +70,7 @@ main {
 
     text-align: right;
 
-    nav ul {
-      list-style: none;
 
-      button {
-        background: none;
-        outline: none;
-        border: none;
-        margin: 5px 15px;
-        font-size: 16px;
-
-        &:hover {
-          cursor: pointer;
-          color: $logoblue;
-        }
-      }
-    }
 
     .logo-box img {
       width: 50px;
@@ -76,7 +78,50 @@ main {
   }
 }
 
-.button-nav {}
+.button-nav ul {
+  list-style: none;
+
+  button {
+    background: none;
+    outline: none;
+    border: none;
+    margin: 5px 15px;
+    font-size: 16px;
+
+    &:hover {
+      cursor: pointer;
+      color: $logoblue;
+    }
+  }
+}
+
+.icon-text-container {
+  width: 50px;
+
+  span {
+    text-align: center;
+  }
+
+}
+
+.procuradev {
+  background-image: url('./assets/procuradevmockup.png');
+  background-position: center;
+  background-size: cover;
+
+}
+
+
+
+
+.button-nav {
+
+  position: absolute;
+
+  top: 30px;
+  right: 30px;
+
+}
 
 
 
@@ -97,7 +142,6 @@ main {
 }
 
 
-
 .icon-container {
 
   height: 100px;
@@ -109,10 +153,11 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 
 
   img {
-    width: 25px;
+    width: 30px;
     margin-right: 20px;
     filter: grayscale(100%);
     transition: 0.5s;
@@ -123,6 +168,10 @@ main {
 
     }
   }
+}
+
+.react-logo {
+  animation: rotate 3s infinite linear;
 }
 
 .button-container button {
@@ -148,7 +197,7 @@ main {
 .arrow-container {
   position: absolute;
   bottom: 5%;
-  margin-left: 2.5em;
+  margin-left: 2em;
   left: 0%;
   display: flex;
   justify-content: center;
@@ -167,22 +216,24 @@ main {
 
   .logo-main {
     transform: scale(1.2);
+
+
   }
 
   .image-box {
     height: 300px;
   }
 
-  header {
 
 
 
-    nav ul li button {
-      font-size: 25px;
+
+  .button-nav ul li button {
+    font-size: 25px;
 
 
-    }
   }
+
 
 
   main {
@@ -230,7 +281,7 @@ main {
 
 
 .work {
-  padding: 2.5em;
+  padding: 2em;
   padding-top: 15px;
   padding-bottom: 1em;
 
@@ -244,6 +295,7 @@ main {
 
   .projects-title {
     font-size: 50px;
+
   }
 
 
@@ -265,6 +317,7 @@ main {
     color: $logoblue;
     font-weight: 700;
     margin-left: 20px;
+    margin: 10px 20px
   }
 
   .project-text {
@@ -321,7 +374,7 @@ main {
 
 footer {
   background: $bright;
-  padding: 2.5em;
+  padding: 2em;
   height: 30vh;
   display: flex;
   flex-direction: column;
@@ -389,6 +442,16 @@ footer {
   cursor: text;
 
   margin-left: 10px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes example {

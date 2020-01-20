@@ -23,7 +23,7 @@ button {
 }
 
 main {
-  padding: 2.5em;
+  padding: 2em;
   padding-top: 0;
   height: 100vh;
   position: relative;
@@ -40,9 +40,13 @@ main {
 }
 
 main header {
+  position: absolute;
   top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -53,11 +57,28 @@ main header {
   text-align: right;
 }
 
-main header nav ul {
+main header .logo-main {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+main header .logo-main:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.5) rotate(20deg);
+          transform: scale(1.5) rotate(20deg);
+}
+
+main header .logo-box img {
+  width: 50px;
+}
+
+.button-nav ul {
   list-style: none;
 }
 
-main header nav ul button {
+.button-nav ul button {
   background: none;
   outline: none;
   border: none;
@@ -65,13 +86,29 @@ main header nav ul button {
   font-size: 16px;
 }
 
-main header nav ul button:hover {
+.button-nav ul button:hover {
   cursor: pointer;
   color: #3a21e3;
 }
 
-main header .logo-box img {
+.icon-text-container {
   width: 50px;
+}
+
+.icon-text-container span {
+  text-align: center;
+}
+
+.procuradev {
+  background-image: url("./assets/procuradevmockup.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.button-nav {
+  position: absolute;
+  top: 30px;
+  right: 30px;
 }
 
 .text-container {
@@ -100,10 +137,12 @@ main header .logo-box img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .icon-container img {
-  width: 25px;
+  width: 30px;
   margin-right: 20px;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
@@ -116,6 +155,11 @@ main header .logo-box img {
           filter: grayscale(0%);
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+}
+
+.react-logo {
+  -webkit-animation: rotate 3s infinite linear;
+          animation: rotate 3s infinite linear;
 }
 
 .button-container button {
@@ -140,7 +184,7 @@ main header .logo-box img {
 .arrow-container {
   position: absolute;
   bottom: 5%;
-  margin-left: 2.5em;
+  margin-left: 2em;
   left: 0%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,7 +209,7 @@ main header .logo-box img {
   .image-box {
     height: 300px;
   }
-  header nav ul li button {
+  .button-nav ul li button {
     font-size: 25px;
   }
   main {
@@ -195,7 +239,7 @@ main header .logo-box img {
 }
 
 .work {
-  padding: 2.5em;
+  padding: 2em;
   padding-top: 15px;
   padding-bottom: 1em;
   background-color: #f1f1f6;
@@ -232,6 +276,7 @@ main header .logo-box img {
   color: #3a21e3;
   font-weight: 700;
   margin-left: 20px;
+  margin: 10px 20px;
 }
 
 .project-container .project-text {
@@ -285,7 +330,7 @@ main header .logo-box img {
 
 footer {
   background: #f1f1f6;
-  padding: 2.5em;
+  padding: 2em;
   height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,6 +397,28 @@ footer .footer-span:hover {
   color: #3a21e3;
   cursor: text;
   margin-left: 10px;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @-webkit-keyframes example {
