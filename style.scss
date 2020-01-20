@@ -440,6 +440,7 @@ footer {
 
   nav ul {
     display: flex;
+    flex-direction: column;
   }
 
   button {
@@ -472,13 +473,31 @@ footer {
 
     .footer-btn {
       font-size: 20px;
-      margin-bottom: 10px;
+
+      &:hover {
+        color: $logoblue;
+      }
+
+    }
+
+    nav ul {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .email-span {
+      font-size: 18px;
+      margin-left: 10px;
     }
   }
 }
 
 .email {
   transition: 1s;
+}
+
+.email-button {
+  margin: 0;
 }
 
 .reverse {
@@ -489,8 +508,129 @@ footer {
   display: none;
   color: $logoblue;
   cursor: pointer;
+  font-size: 14px;
+}
 
-  margin-left: 10px;
+
+
+.circle {
+  position: absolute;
+  left: 20px;
+  font-size: 10px;
+  transform: translateY(10px);
+}
+
+@media only screen and (min-width: 768px) {
+
+  .circle {
+    left: 60px;
+  }
+
+}
+
+.job-description {
+  line-height: 20px;
+  font-size: 13px;
+}
+
+.job-title {
+  font-size: 18px;
+}
+
+.experience {
+
+
+  background-color: $logoblue;
+  color: $bright;
+  position: relative;
+  padding: 0;
+
+
+
+  h3 {
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 30px;
+
+  }
+
+
+  .company-title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .year-title {}
+
+  .company-title {
+    font-size: 15px;
+  }
+
+  .experience-text {
+    padding: 2.5em;
+    padding-bottom: 0px;
+
+  }
+
+  .experience-title {
+
+    font-size: 35px;
+
+  }
+
+  .experience-container {
+
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    padding-bottom: 1.5em;
+
+
+    line-height: 20px;
+
+
+
+
+    &:hover {
+      background-color: #471e9c;
+    }
+
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .experience {
+    .experience-text {
+      padding-left: 100px;
+      padding-top: 50px;
+
+      font-size: 80px;
+    }
+
+    .experience-title {
+
+      font-size: 50px;
+
+    }
+
+    .experience-container {
+
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-bottom: 30px;
+      padding-top: 30px;
+
+    }
+
+
+
+  }
+
+
+
+
+
 }
 
 @keyframes rotate {

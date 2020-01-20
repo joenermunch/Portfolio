@@ -452,6 +452,10 @@ footer nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer button {
@@ -482,13 +486,32 @@ footer .footer-span:hover {
   }
   footer .footer-btn {
     font-size: 20px;
-    margin-bottom: 10px;
+  }
+  footer .footer-btn:hover {
+    color: #6938cd;
+  }
+  footer nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer .email-span {
+    font-size: 18px;
+    margin-left: 10px;
   }
 }
 
 .email {
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.email-button {
+  margin: 0;
 }
 
 .reverse {
@@ -500,7 +523,89 @@ footer .footer-span:hover {
   display: none;
   color: #6938cd;
   cursor: pointer;
-  margin-left: 10px;
+  font-size: 14px;
+}
+
+.circle {
+  position: absolute;
+  left: 20px;
+  font-size: 10px;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+@media only screen and (min-width: 768px) {
+  .circle {
+    left: 60px;
+  }
+}
+
+.job-description {
+  line-height: 20px;
+  font-size: 13px;
+}
+
+.job-title {
+  font-size: 18px;
+}
+
+.experience {
+  background-color: #6938cd;
+  color: #f1f1f6;
+  position: relative;
+  padding: 0;
+}
+
+.experience h3 {
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.experience .company-title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.experience .company-title {
+  font-size: 15px;
+}
+
+.experience .experience-text {
+  padding: 2.5em;
+  padding-bottom: 0px;
+}
+
+.experience .experience-title {
+  font-size: 35px;
+}
+
+.experience .experience-container {
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  padding-bottom: 1.5em;
+  line-height: 20px;
+}
+
+.experience .experience-container:hover {
+  background-color: #471e9c;
+}
+
+@media only screen and (min-width: 768px) {
+  .experience .experience-text {
+    padding-left: 100px;
+    padding-top: 50px;
+    font-size: 80px;
+  }
+  .experience .experience-title {
+    font-size: 50px;
+  }
+  .experience .experience-container {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
 }
 
 @-webkit-keyframes rotate {
