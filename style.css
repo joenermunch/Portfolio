@@ -22,6 +22,29 @@ button {
   font-family: "Work Sans", sans-serif;
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50vh;
+  padding: 2em;
+}
+
+.about h2 {
+  color: #696969;
+}
+
+.about a {
+  color: #3a21e3;
+}
+
 main {
   padding: 2em;
   padding-top: 0;
@@ -119,6 +142,12 @@ main header .logo-box img {
 
 .medication {
   background-image: url("./assets/medicationmockup.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.calc {
+  background-image: url("./assets/calcmockup.png");
   background-position: center;
   background-size: cover;
 }

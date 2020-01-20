@@ -5,6 +5,7 @@ const contactArea = document.querySelector(".contact");
 const contactButton = document.querySelector(".contact-button");
 const emailButton = document.querySelector(".email");
 const emailSpan = document.querySelector(".email-span");
+const aboutSection = document.querySelector(".about");
 
 emailButton.addEventListener("click", () => {
   emailSpan.style.display === "inline"
@@ -17,7 +18,7 @@ const smoothScroll = section => {
 };
 
 arrow.addEventListener("click", () => {
-  smoothScroll(workSection);
+  smoothScroll(aboutSection);
 });
 
 projectsButton.addEventListener("click", () => smoothScroll(workSection));

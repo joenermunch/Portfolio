@@ -31,6 +31,22 @@ button {
   font-family: "Work Sans", sans-serif;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  padding: 2em;
+
+  h2 {
+    color: #696969;
+  }
+
+  a {
+    color: $logoblue;
+  }
+}
+
 main {
   padding: 2em;
   padding-top: 0;
@@ -115,6 +131,12 @@ main {
 
 .medication {
   background-image: url("./assets/medicationmockup.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.calc {
+  background-image: url("./assets/calcmockup.png");
   background-position: center;
   background-size: cover;
 }
