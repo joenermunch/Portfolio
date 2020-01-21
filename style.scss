@@ -56,32 +56,21 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
-
   .about-text {
     font-size: 24px;
   }
-
 }
 
 @media only screen and (min-width: 900px) {
-
   .about {
     padding: 100px;
-
   }
 
   .about-text {
     font-size: 24px;
     width: 50%;
   }
-
-
 }
-
-
-
-
-
 
 main {
   padding: 2em;
@@ -122,11 +111,8 @@ main {
   }
 }
 
-
-
 .button-nav ul {
   list-style: none;
-
 
   button {
     background: none;
@@ -156,12 +142,9 @@ main {
 }
 
 .lang-button {
-
   color: $logoblue;
   border: none;
-
 }
-
 
 .procuradev {
   background-image: url("./assets/procuradevmockup.png");
@@ -261,7 +244,7 @@ main {
 
 .arrow-container {
   position: absolute;
-  bottom: 5%;
+  bottom: 15%;
   margin-left: 2em;
   left: 0%;
   display: flex;
@@ -276,9 +259,6 @@ main {
 }
 
 @media only screen and (min-width: 768px) {
-
-
-
   .logo-main {
     transform: scale(1.2);
   }
@@ -309,7 +289,8 @@ main {
       margin: 0;
     }
 
-    h2 {}
+    h2 {
+    }
   }
 
   .arrow-container {
@@ -395,8 +376,6 @@ main {
   }
 }
 
-
-
 .code-text {
   position: absolute;
   bottom: 60px;
@@ -466,6 +445,10 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  .arrow-container {
+    left: 20px;
+  }
+
   footer {
     padding: 100px;
 
@@ -479,7 +462,6 @@ footer {
       &:hover {
         color: $logoblue;
       }
-
     }
 
     nav ul {
@@ -513,8 +495,6 @@ footer {
   font-size: 14px;
 }
 
-
-
 .circle {
   position: absolute;
   left: 20px;
@@ -523,11 +503,9 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-
   .circle {
     left: 60px;
   }
-
 }
 
 .job-description {
@@ -542,29 +520,22 @@ footer {
 }
 
 .experience {
-
-
   background-color: $logoblue;
   color: $bright;
   position: relative;
   padding: 0;
 
-
-
-
   h3 {
     font-size: 30px;
-
-
   }
-
 
   .company-title {
     margin-top: 5px;
     margin-bottom: 10px;
   }
 
-  .year-title {}
+  .year-title {
+  }
 
   .company-title {
     font-size: 15px;
@@ -573,38 +544,27 @@ footer {
   .experience-text {
     padding: 2.5em;
     padding-bottom: 0px;
-
   }
 
   .experience-title {
-
     font-size: 35px;
-
   }
 
   .experience-container {
-
     padding-left: 2.5em;
     padding-right: 2.5em;
     padding-bottom: 1.5em;
     padding-top: 1.5em;
 
-
     line-height: 20px;
-
-
-
 
     &:hover {
       background-color: #471e9c;
     }
-
   }
-
 }
 
 @media only screen and (min-width: 768px) {
-
   .experience {
     .experience-text {
       padding-left: 100px;
@@ -614,25 +574,13 @@ footer {
     }
 
     .experience-title {
-
       font-size: 50px;
-
     }
 
     .experience-container {
-
       padding: 50px 100px;
-
     }
-
-
-
   }
-
-
-
-
-
 }
 
 @keyframes rotate {

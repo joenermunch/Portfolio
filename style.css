@@ -264,7 +264,7 @@ main header .logo-box img {
 
 .arrow-container {
   position: absolute;
-  bottom: 5%;
+  bottom: 15%;
   margin-left: 2em;
   left: 0%;
   display: -webkit-box;
@@ -480,6 +480,9 @@ footer .footer-span:hover {
 }
 
 @media only screen and (min-width: 768px) {
+  .arrow-container {
+    left: 20px;
+  }
   footer {
     padding: 100px;
   }
