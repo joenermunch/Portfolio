@@ -533,6 +533,8 @@ footer {
 .job-description {
   line-height: 20px;
   font-size: 13px;
+  padding: 0;
+  margin: 0;
 }
 
 .job-title {
@@ -553,7 +555,6 @@ footer {
   h3 {
     font-size: 30px;
 
-    margin-bottom: 74px;
 
   }
 
@@ -620,10 +621,7 @@ footer {
 
     .experience-container {
 
-      padding-left: 100px;
-      padding-right: 100px;
-      padding-bottom: 30px;
-      padding-top: 30px;
+      padding: 50px 100px;
 
     }
 
