@@ -35,8 +35,10 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50vh;
+  height: 400px;
   padding: 2em;
+  padding-top: 0;
+  padding-bottom: 0;
   background-color: $logoblue;
   color: $bright;
   font-size: 16px;
@@ -66,13 +68,12 @@ button {
 @media only screen and (min-width: 900px) {
 
   .about {
-    padding: 100px;
-
+    padding-left: 100px;
   }
 
   .about-text {
     font-size: 24px;
-    width: 50%;
+    width: 70%;
   }
 
 
@@ -193,6 +194,14 @@ main {
   background-size: cover;
 }
 
+.stats {
+
+  background-image: url("./assets/statsmockup.png");
+  background-position: center;
+  background-size: cover;
+
+}
+
 .button-nav {
   position: absolute;
   text-align: right;
@@ -214,6 +223,11 @@ main {
   .stack {
     color: $logoblue;
   }
+}
+
+.website {
+  position: absolute;
+  left: 100px;
 }
 
 .icon-container {

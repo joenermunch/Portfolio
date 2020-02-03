@@ -33,8 +33,10 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 50vh;
+  height: 400px;
   padding: 2em;
+  padding-top: 0;
+  padding-bottom: 0;
   background-color: #6938cd;
   color: #f1f1f6;
   font-size: 16px;
@@ -61,11 +63,11 @@ button {
 
 @media only screen and (min-width: 900px) {
   .about {
-    padding: 100px;
+    padding-left: 100px;
   }
   .about-text {
     font-size: 24px;
-    width: 50%;
+    width: 70%;
   }
 }
 
@@ -185,6 +187,12 @@ main header .logo-box img {
   background-size: cover;
 }
 
+.stats {
+  background-image: url("./assets/statsmockup.png");
+  background-position: center;
+  background-size: cover;
+}
+
 .button-nav {
   position: absolute;
   text-align: right;
@@ -205,6 +213,11 @@ main header .logo-box img {
 
 .text-container .stack {
   color: #6938cd;
+}
+
+.website {
+  position: absolute;
+  left: 100px;
 }
 
 .icon-container {
