@@ -236,7 +236,11 @@ main {
 }
 
 .react-logo {
+
+
   animation: rotate 3s infinite linear;
+
+
 }
 
 .button-container button {
@@ -603,6 +607,7 @@ footer {
 
   100% {
     transform: rotate(360deg);
+
   }
 }
 
